@@ -6,11 +6,8 @@ $font-primary: 'Poppins',Arial, sans-serif;
 $white: #fff;
 $black: #000000;
 $darken: #232931;
-
 $primary: #b1b493;
 $secondary: #a0f669;
-
-
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -1282,10 +1279,12 @@ textarea.form-control {
 }
 
 
+
 .ftco-footer {
 	font-size: 16px;
 	background: $darken;
-	padding: 7em 0;
+	padding: 3em 0;
+	margin-bottom: -200px;
 	z-index: 0;
 
 	.ftco-footer-logo {
