@@ -5,11 +5,15 @@ import Stats from './components/Stats';
 
 function App() {
   return (
-    <>
-      <Header />
+    <>  <section id="home">
+          <Header />
+        </section>
+     
       <Hero/>
       <Stats />
-      <About />
+         <section id="about">
+        <About />
+        </section>
     </>
   );
 }
