@@ -23,7 +23,7 @@ export default function Hero() {
       setCurrent((prev) => (prev + 1) % banners.length);
     }, 2000);
     return () => clearInterval(interval);
-  }, []);
+  }, [banners.length]);
 
   return (
     <section className="hero">
@@ -33,7 +33,7 @@ export default function Hero() {
         <p className="hero-description">{banners[current].description}</p>
         <div className="hero-buttons">
           <button className="btn filled">Hire me</button>
-          <button className="btn outlined">Download CV</button>
+          <a href="/vikas-pal-cv.pdf" download className="btn outlined">Download CV</a>
         </div>
       </div>
       <div className="hero-image">
