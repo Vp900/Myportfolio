@@ -2,16 +2,51 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
   margin-top: 100px;
   flex-wrap: wrap;
   gap: 40px;
-    padding-left:100px;
-  background: linear-gradient(180deg, #ffffff 0%, #b0bbbd 100%);
+  padding-left: 100px;
+  background: linear-gradient(180deg, #ffffff 0%, #61677A 100%);
   color: #000;
 }
 
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
 
+  .hero-content {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .hero-heading {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}
 
 .hero-content {
   flex: 1;
@@ -56,8 +91,8 @@
   padding: 12px 24px;
   border-radius: 8px;
   font-weight: 600;
-  text-decoration: none; /* REMOVE underline */
-  display: inline-block; /* Ensure proper padding and block shape */
+  text-decoration: none;
+  display: inline-block;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
