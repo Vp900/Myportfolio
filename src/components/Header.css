@@ -1,0 +1,154 @@
+/* Header.css */
+
+.header {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Desktop nav */
+.nav-links {
+  display: none;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link.active,
+.mobile-link.active {
+  color: #b1b493;
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: #b1b493;
+}
+
+/* Call Us Button */
+.call-button-wrapper {
+  display: none;
+}
+
+.call-button {
+  background-color: #b1b493;
+  color: black;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* REMOVE underline */
+  display: inline-block; /* Ensure proper padding and block shape */
+  text-align: center;
+}
+
+
+/* Hover effect: background + shake animation */
+.call-button:hover {
+  background-color: #b1b493;
+  animation: shake 0.4s ease;
+}
+
+
+/* Shake keyframes */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
+
+
+/* Toggle button for mobile */
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile overlay */
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  display: flex;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  background-color: white;
+  width: 75%;
+  max-width: 300px;
+  height: 100%;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Close button inside mobile menu */
+.mobile-close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+}
+
+.mobile-link:hover {
+  color: #b1b493;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .call-button-wrapper {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
