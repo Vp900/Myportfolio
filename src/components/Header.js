@@ -35,7 +35,6 @@ export default function Header() {
           <a href="#skill" className={`nav-link${activeLink === '#skill' ? ' active' : ''}`} onClick={() => handleLinkClick('#skill')}>Skill</a>
           <a href="#services" className={`nav-link${activeLink === '#services' ? ' active' : ''}`} onClick={() => handleLinkClick('#services')}>Services</a>
           <a href="#projects" className={`nav-link${activeLink === '#projects' ? ' active' : ''}`} onClick={() => handleLinkClick('#projects')}>Projects</a>
-          <a href="#blogs" className={`nav-link${activeLink === '#blogs' ? ' active' : ''}`} onClick={() => handleLinkClick('#blogs')}>Blogs</a>
           <a href="#contact" className={`nav-link${activeLink === '#contact' ? ' active' : ''}`} onClick={() => handleLinkClick('#contact')}>Contact</a>
         </nav>
 
@@ -71,7 +70,6 @@ export default function Header() {
             <a href="#skill" className={`mobile-link${activeLink === '#skill' ? ' active' : ''}`} onClick={() => handleLinkClick('#skill')}>Skill</a>
             <a href="#services" className={`mobile-link${activeLink === '#services' ? ' active' : ''}`} onClick={() => handleLinkClick('#services')}>Services</a>
             <a href="#projects" className={`mobile-link${activeLink === '#projects' ? ' active' : ''}`} onClick={() => handleLinkClick('#projects')}>Projects</a>
-            <a href="#blogs" className={`mobile-link${activeLink === '#blogs' ? ' active' : ''}`} onClick={() => handleLinkClick('#blogs')}>Blogs</a>
             <a href="#contact" className={`mobile-link${activeLink === '#contact' ? ' active' : ''}`} onClick={() => handleLinkClick('#contact')}>Contact</a>
 
             {/* Call Button */}
