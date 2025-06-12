@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import SkillsSection from './components/SkillsSection';
 import Services from './components/Services';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <section id="about"><About /></section>
     <section id="skill"><SkillsSection /></section>
     <section id="services"><Services /></section>
+    <section id="projects"><Projects /></section>
     </>
   );
 }
