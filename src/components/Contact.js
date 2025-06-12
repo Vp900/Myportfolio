@@ -60,9 +60,7 @@ const Contact = () => {
           <img src={contactImg} alt="Contact Illustration" />
         </div>
       </div>
-      <div className="contact-header" style="text-align: center; margin-top: 100px;">
-<p>© 2025 | Developed with ❤️ using React.js by Vikas Pal</p>
-      </div>  
+     
     </section>
   );
 };
