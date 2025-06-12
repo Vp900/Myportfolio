@@ -24,7 +24,11 @@
 
 .about-right {
   flex: 1;
+
   max-width: 700px;
+}
+.about-right h2,h5,p,li{
+  text-align: left;
 }
 
 .intro-heading {
