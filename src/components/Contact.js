@@ -25,7 +25,7 @@ const Contact = () => {
 
       <div className="contact-container">
         <div className="contact-form">
-     <form action="https://api.web3forms.com/submit" method="POST">
+     <form  onSubmit={handleSubmit} action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="84449af3-9ad9-4b1c-a0c1-3df7753f1907"/>
             <input type="text" name="name" placeholder="Your Name" required />
             <input type="tel" name="mobile" placeholder="Mobile Number" required />
