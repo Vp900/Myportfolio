@@ -1,5 +1,5 @@
 import './Footer.css';
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin} from 'lucide-react';
 import logo from '../assets/logo.png';
 
 export default function Footer() {
@@ -11,8 +11,12 @@ export default function Footer() {
           {/* Column 1 - Logo & Description */}
           <div className="footer-col">
             <img src={logo} alt="Logo" className="footer-logo" />
-            <p className="footer-desc">I'm Vikas Pal, a passionate Web Developer building modern, user-friendly websites with React and latest technologies.</p>
-          </div>
+          <p className="footer-desc">
+  I'm Vikas Pal, a passionate Web Developer building modern, user-friendly websites with React and the latest technologies.
+  I specialize in creating responsive and high-performance websites that help businesses grow their digital presence and stand out online.
+</p>
+
+</div>
 
           {/* Column 2 - Quick Links */}
           <div className="footer-col">
@@ -45,11 +49,7 @@ export default function Footer() {
                   Wadala East, Mumbai, 400037
                 </a>
               </li>
-              <li className="social-icons">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><Linkedin size={20} /></a>
-              </li>
+             
             </ul>
           </div>
         </div>
