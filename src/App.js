@@ -6,6 +6,7 @@ import SkillsSection from './components/SkillsSection';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <section id="services"><Services /></section>
     <section id="projects"><Projects /></section>
     <section id="contact"><Contact /></section>
+    <section id="footer"><Footer /></section>
     </>
   );
 }
