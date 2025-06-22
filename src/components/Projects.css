@@ -20,11 +20,10 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 50px; /* ⬅️ Increase from 30px to 50px */
+  gap: 50px; /* Increased from 30px to 50px */
   justify-content: center;
   align-items: stretch;
 }
-
 
 .project-box {
   background-color: #b1b493;
@@ -35,7 +34,7 @@
   justify-content: space-between;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 100%; /* optional if you want equal height */
+  height: 100%;
 }
 
 .project-box:hover {
