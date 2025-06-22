@@ -1,0 +1,136 @@
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.section-subtitle {
+  color: #b1b493;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.section-description {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.skills-left,
+.skills-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.skills-left .skill-card:nth-child(1) {
+  margin-left: 50px; /* HTML inside */
+}
+.skills-left .skill-card:nth-child(2) {
+  margin-left: 0;
+  margin-right: 50px; /* CSS outside */
+}
+.skills-left .skill-card:nth-child(3) {
+  margin-left: 50px; /* JS inside */
+}
+
+.skills-right .skill-card:nth-child(1) {
+  margin-right: 50px; /* Bootstrap inside */
+}
+.skills-right .skill-card:nth-child(2) {
+  margin-right: 0;
+  margin-left: 50px;  /* WordPress outside */
+}
+.skills-right .skill-card:nth-child(3) {
+  margin-right: 50px; /* Shopify inside */
+}
+
+.skills-center {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.center-photo {
+  width: 350px;
+  height: 400px;
+  border-radius: 25%;
+  object-fit: cover;
+  border: 6px solid #b1b493;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 15px 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.skill-icon {
+  font-size: 32px;
+  color: #b1b493;
+  min-width: 32px;
+}
+
+.skill-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .skills-left,
+  .skills-right {
+    align-items: center;
+  }
+
+  .skill-card {
+    text-align: center;
+    justify-content: center;
+    margin: 0 !important;
+  }
+
+  .skills-center {
+    order: -1;
+  }
+
+  .center-photo {
+    margin-bottom: 30px;
+  }
+}

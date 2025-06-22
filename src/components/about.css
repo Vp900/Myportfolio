@@ -1,0 +1,155 @@
+/* about.css */
+.about {
+  padding: 20px;
+  background: #f8f8f8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-left img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-right {
+  flex: 1;
+
+  max-width: 700px;
+}
+.about-right h2,h5,p,li{
+  text-align: left;
+}
+
+.intro-heading {
+  color: #7c8756;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.main-heading {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4f4f4f;
+  margin-bottom: 20px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.info-list a {
+  color: #7c8756;
+  text-decoration: none;
+}
+
+.project-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.skills-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* for responsiveness */
+  margin-top: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.icon {
+  font-size: 22px;
+  color: #b1b493;
+}
+
+/* Vertical divider between items */
+.v-divider {
+  width: 1px;
+  height: 30px;
+  background-color: #ccc;
+}
+
+
+.project-icon {
+  display: flex;
+  align-items: center;
+  background: #e8e8e8;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #333;
+  gap: 8px;
+}
+
+.about-left img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* soft outer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-left img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* hover shadow */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-right {
+    max-width: 100%;
+  }
+
+  .project-types {
+    justify-content: center;
+  }
+}

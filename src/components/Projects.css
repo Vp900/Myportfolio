@@ -1,0 +1,87 @@
+.projects-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fdfdfd;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px; /* ⬅️ Increase from 30px to 50px */
+  justify-content: center;
+  align-items: stretch;
+}
+
+
+.project-box {
+  background-color: #b1b493;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 100%; /* optional if you want equal height */
+}
+
+.project-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 152px;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 15px 0 10px;
+  color: #fff;
+  text-align: left;
+}
+
+.project-description {
+  color: #f1f1f1;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.project-link {
+  margin-top: auto;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-link:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
