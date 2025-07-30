@@ -1,6 +1,6 @@
 .contact-section {
   padding: 60px 20px;
-  background-color: #f4f4f4; /* Light Gray */
+  background-color: #f0f0f0; /* Light Gray */
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -11,13 +11,13 @@
 
 .contact-header h2 {
   font-size: 36px;
-  color: #333; /* Dark Gray */
+  color: #000000; /* Black */
   margin-bottom: 10px;
 }
 
 .contact-header p {
   font-size: 18px;
-  color: #666; /* Medium Gray */
+  color: #333; /* Dark Gray */
   max-width: 700px;
   text-align: center;
   margin: auto;
@@ -43,15 +43,20 @@
 .contact-form form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .contact-form input,
 .contact-form textarea {
   padding: 12px 15px;
   margin-bottom: 15px;
-  border: 1px solid #ccc; /* Light Gray */
-  border-radius: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   font-size: 16px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff; /* White input */
+  color: #000000; /* Black text */
 }
 
 .contact-form textarea {
@@ -60,24 +65,24 @@
 }
 
 .contact-form button {
-  background-color: #b1b493; /* Olive Green */
+  background-color: #28a745; /* Green */
   color: white;
   border: none;
-  padding: 12px;
+  padding: 12px 30px;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #9da87e; /* Darker Olive */
+  background-color: #218838; /* Darker Green */
 }
 
 .success-message {
   margin-top: 10px;
-  color: green;
-  font-weight: 600;
+  color: #dc3545; /* Red for error/success highlight */
+  font-weight: bold;
 }
 
 .contact-image {
@@ -87,25 +92,21 @@
 
 .contact-image img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   max-width: 500px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  .contact-form form {
-    align-items: center;
-  }
-
   .contact-form input,
   .contact-form textarea {
     width: 100%;
-    max-width: 500px;
   }
 
   .contact-image {
