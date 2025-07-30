@@ -2,12 +2,12 @@
 
 .header {
   width: 100%;
-  background-color: white;
+  background-color: #FFFFFF; /* White */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-container {
@@ -20,8 +20,9 @@
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
+  color: #1A237E; /* Navy Blue */
 }
 
 /* Desktop nav */
@@ -33,18 +34,20 @@
 }
 
 .nav-link {
-  color: #333;
+  color: #1A1A1A; /* Almost black */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
+
 .nav-link.active,
 .mobile-link.active {
-  color: #b1b493;
+  color: #2962FF; /* Royal Blue */
   font-weight: bold;
 }
+
 .nav-link:hover {
-  color: #b1b493;
+  color: #2962FF; /* Royal Blue */
 }
 
 /* Call Us Button */
@@ -53,34 +56,22 @@
 }
 
 .call-button {
-  background-color: #b1b493;
-  color: black;
+  background-color: #2962FF; /* Royal Blue */
+  color: #FFFFFF; /* White text */
   padding: 10px 18px;
   border: none;
-  border-radius: 10px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none; /* REMOVE underline */
-  display: inline-block; /* Ensure proper padding and block shape */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
   text-align: center;
 }
 
-
-/* Hover effect: background + shake animation */
 .call-button:hover {
-  background-color: #b1b493;
-  animation: shake 0.4s ease;
-}
-
-
-/* Shake keyframes */
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-3px); }
-  50% { transform: translateX(3px); }
-  75% { transform: translateX(-3px); }
-  100% { transform: translateX(0); }
+  background-color: #0039CB; /* Deep Blue */
+  transform: scale(1.05); /* Slight grow on hover */
 }
 
 
@@ -102,7 +93,7 @@
 
 /* Mobile menu */
 .mobile-menu {
-  background-color: white;
+  background-color: #FFFFFF;
   width: 75%;
   max-width: 300px;
   height: 100%;
@@ -125,14 +116,14 @@
 }
 
 .mobile-link {
-  color: #333;
+  color: #1A1A1A;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1rem;
 }
 
 .mobile-link:hover {
-  color: #b1b493;
+  color: #2962FF; /* Royal Blue */
 }
 
 /* Responsive */
