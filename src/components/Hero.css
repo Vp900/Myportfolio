@@ -6,11 +6,10 @@
   flex-wrap: wrap;
   gap: 40px;
   padding-left: 100px;
-  background: linear-gradient(180deg, #ffffff 0%, #61677A 100%);
+  background: linear-gradient(180deg, #FFFFFF 0%, #E3F2FD 100%);
   color: #000;
 }
 
-/* Mobile Layout */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -54,7 +53,7 @@
 }
 
 .hero-subheading {
-  color: #b1b493;
+  color: #00B0FF; /* Sky Blue */
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -70,13 +69,13 @@
 }
 
 .hero-heading span {
-  color: #b1b493;
+  color: #2962FF; /* Royal Blue */
 }
 
 .hero-description {
   font-size: 24px;
   font-weight: 700;
-  color: #111;
+  color: #333333; /* Charcoal Gray */
   margin-bottom: 24px;
 }
 
@@ -99,24 +98,24 @@
 }
 
 .btn.filled {
-  background-color: #b1b493;
-  color: white;
+  background-color: #2962FF; /* Royal Blue */
+  color: #FFFFFF;
   border: none;
 }
 
 .btn.filled:hover {
-  background-color: #9ea680;
+  background-color: #0039CB; /* Deep Blue */
 }
 
 .btn.outlined {
   background: transparent;
-  border: 2px solid #b1b493;
-  color: #b1b493;
+  border: 2px solid #2962FF;
+  color: #2962FF;
 }
 
 .btn.outlined:hover {
-  background-color: #b1b493;
-  color: white;
+  background-color: #0039CB;
+  color: #FFFFFF;
 }
 
 .hero-image {
@@ -127,6 +126,6 @@
 .hero-image img {
   max-width: 100%;
   height: auto;
-  margin-bottom: -10px;;
+  margin-bottom: -10px;
   border-radius: 8px;
 }
