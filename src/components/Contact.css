@@ -1,6 +1,6 @@
 .contact-section {
   padding: 60px 20px;
-  background-color: #f4f4f4;
+  background-color: #f4f4f4; /* Light Gray */
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -11,13 +11,13 @@
 
 .contact-header h2 {
   font-size: 36px;
-  color: #333;
+  color: #333; /* Dark Gray */
   margin-bottom: 10px;
 }
 
 .contact-header p {
   font-size: 18px;
-  color: #666;
+  color: #666; /* Medium Gray */
   max-width: 700px;
   text-align: center;
   margin: auto;
@@ -49,7 +49,7 @@
 .contact-form textarea {
   padding: 12px 15px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #ccc; /* Light Gray */
   border-radius: 8px;
   font-size: 16px;
 }
@@ -60,7 +60,7 @@
 }
 
 .contact-form button {
-  background-color: #b1b493;
+  background-color: #b1b493; /* Olive Green */
   color: white;
   border: none;
   padding: 12px;
@@ -71,7 +71,7 @@
 }
 
 .contact-form button:hover {
-  background-color: #9da87e;
+  background-color: #9da87e; /* Darker Olive */
 }
 
 .success-message {
