@@ -1,0 +1,177 @@
+/* ===========================
+   Footer Base Styles
+=========================== */
+.footer {
+  background-color: #1e6688; /* Light Olive Green */
+  color: #fff;
+  padding: 40px 20px 10px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center; /* ensure everything centered */
+}
+
+.footer-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  margin: 10px auto;
+}
+
+.footer-logo {
+  width: 100px;
+  margin: 0 auto 20px auto;
+  display: block;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.footer-col h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+  color: #f0f0f0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 13px;
+  padding: 15px 10px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+
+/* Tablets (max-width: 991px) */
+@media (max-width: 991px) {
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-col {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 90px;
+  }
+
+  .footer-desc {
+    font-size: 14px;
+  }
+
+  .footer-col h3 {
+    font-size: 17px;
+  }
+}
+
+/* Mobile Devices (max-width: 600px) */
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 10px;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-col {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-col h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .footer-desc {
+    font-size: 13px;
+  }
+
+  .footer-logo {
+    width: 80px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+/* Very Small Devices (max-width: 400px) */
+@media (max-width: 400px) {
+  .footer {
+    padding: 25px 10px;
+  }
+
+  .footer-col h3 {
+    font-size: 15px;
+  }
+
+  .footer-desc {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .footer-logo {
+    width: 70px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
+}

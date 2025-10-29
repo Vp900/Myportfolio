@@ -1,0 +1,86 @@
+.stats-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px; /* Increased from 40px to 80px */
+  padding: 80px 60px; /* Increased padding */
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Slightly more space between icon and text */
+  text-align: left;
+  max-width: 280px; /* Slightly wider item for more breathing space */
+}
+
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1e6688;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.stat-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+}
+
+.stat-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e6688;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* ===== Responsive Fix for Mobile ===== */
+@media (max-width: 600px) {
+  .stats-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .stat-item {
+    width: 100%;
+    max-width: 90%;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+  }
+
+  .icon-circle {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .stat-value {
+    font-size: 18px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+  }
+}
