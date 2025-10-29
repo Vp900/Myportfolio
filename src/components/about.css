@@ -17,10 +17,7 @@
 .about-left img {
   width: 100%;
   max-width: 400px;
-<<<<<<< HEAD
   position: relative;
-=======
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   object-fit: cover;
