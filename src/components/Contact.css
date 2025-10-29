@@ -65,11 +65,9 @@
 }
 
 .contact-form button {
-<<<<<<< HEAD
+
   background-color: #1e6688; /* Green */
-=======
-  background-color: #28a745; /* Green */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   color: white;
   border: none;
   padding: 12px 30px;
@@ -80,20 +78,16 @@
 }
 
 .contact-form button:hover {
-<<<<<<< HEAD
+
   background-color: #21bedb; /* Darker Green */
-=======
-  background-color: #218838; /* Darker Green */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
 }
 
 .success-message {
   margin-top: 10px;
-<<<<<<< HEAD
+
   color:  #1e6688;/* Red for error/success highlight */
-=======
-  color: #dc3545; /* Red for error/success highlight */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   font-weight: bold;
 }
 

@@ -42,11 +42,11 @@
 }
 
 .intro-heading {
-<<<<<<< HEAD
+
   color: #1e6688; /* Olive Green */
-=======
+
   color: #607d3b; /* Olive Green */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 14px;
@@ -75,29 +75,29 @@
 
 .info-list li {
   margin-bottom: 10px;
-<<<<<<< HEAD
+
   color: #1e6688;
-=======
+
   color: #333;
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   font-size: 16px;
 }
 
 .info-list a {
-<<<<<<< HEAD
+
   color: #1e6688; /* Olive Green */
-=======
+
   color: #607d3b; /* Olive Green */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .info-list a:hover {
-<<<<<<< HEAD
+
   color: #1e6688; /* Dark Olive Hover */
-=======
+
   color: #3e4f25; /* Dark Olive Hover */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
 }
 
 .project-types {
@@ -109,28 +109,24 @@
 .project-icon {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
+
   background: #1e6688; /* Light Gray */
   border-radius: 8px;
   padding: 8px 16px;
   font-size: 16px;
   color: #1e6688; /* Dark Gray */
-=======
-  background: #e0e0e0; /* Light Gray */
   border-radius: 8px;
   padding: 8px 16px;
   font-size: 16px;
   color: #2e2e2e; /* Dark Gray */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   gap: 8px;
   transition: background 0.3s ease;
 }
 .project-icon:hover {
-<<<<<<< HEAD
+
   background: #21bedb;
-=======
-  background: #d0d0d0;
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
 }
 
 .info {
@@ -159,22 +155,22 @@
 
 .icon {
   font-size: 22px;
-<<<<<<< HEAD
+
   color: #1e6688; /* Light Olive */
-=======
-  color: #7c8756; /* Light Olive */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
+
+
 }
 
 /* Vertical Divider */
 .v-divider {
   width: 1px;
   height: 30px;
-<<<<<<< HEAD
+
   background-color:#1e6688;
-=======
-  background-color: #bbb;
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
+
+
 }
 
 /* Responsive */
@@ -193,11 +189,10 @@
     justify-content: center;
   }
 }
-<<<<<<< HEAD
+
 
 .info-list{
   display: flex;
   gap: 20px;
 }
-=======
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+

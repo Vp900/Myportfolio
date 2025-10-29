@@ -22,11 +22,10 @@
 .logo {
   font-size: 1.7rem;
   font-weight: bold;
-<<<<<<< HEAD
+
   color: #1e6688; /* Navy Blue */
-=======
-  color: #1A237E; /* Navy Blue */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
+
 }
 
 /* Desktop nav */
@@ -46,20 +45,16 @@
 
 .nav-link.active,
 .mobile-link.active {
-<<<<<<< HEAD
+
   color:#1e6688;/* Royal Blue */
-=======
-  color: #2962FF; /* Royal Blue */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   font-weight: bold;
 }
 
 .nav-link:hover {
-<<<<<<< HEAD
+
   color: #1e6688; /* Royal Blue */
-=======
-  color: #2962FF; /* Royal Blue */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
 }
 
 /* Call Us Button */
@@ -68,11 +63,9 @@
 }
 
 .call-button {
-<<<<<<< HEAD
+
   background-color: #1e6688; /* Royal Blue */
-=======
-  background-color: #2962FF; /* Royal Blue */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   color: #FFFFFF; /* White text */
   padding: 10px 18px;
   border: none;
@@ -86,11 +79,9 @@
 }
 
 .call-button:hover {
-<<<<<<< HEAD
+
   background-color: #21bedb; /* Deep Blue */
-=======
-  background-color: #0039CB; /* Deep Blue */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   transform: scale(1.05); /* Slight grow on hover */
 }
 
@@ -143,11 +134,8 @@
 }
 
 .mobile-link:hover {
-<<<<<<< HEAD
+
   color: #21bedb;/* Royal Blue */
-=======
-  color: #2962FF; /* Royal Blue */
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
 }
 
 /* Responsive */

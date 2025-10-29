@@ -8,28 +8,20 @@ import {
   FaWordpress,
   FaShopify,
 } from "react-icons/fa";
-<<<<<<< HEAD
+
 import skilImage from "../assets/skillpic.jpeg"; 
-=======
-import skilImage from "../assets/skillpic.jpeg"; // आपकी फोटो यहाँ रखें
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
 
 const SkillsSection = () => {
   return (
     <section className="skills-section">
-<<<<<<< HEAD
+
   
       <h2 className="section-title">Most Popular Skills</h2>
       <p className="section-description">
        I specialize in delivering robust and innovative web solutions through advanced front-end technologies and responsive frameworks. With strong backend expertise and PHP integration, I ensure every project is efficient, scalable, and performance-driven.    </p>
-=======
-      <p className="section-subtitle">OUR EXPERTISE</p>
-      <h2 className="section-title">Most Popular Skills</h2>
-      <p className="section-description">
-        Explore our wide range of technical skills that define our excellence in development and digital innovation. Our core competencies include powerful front-end technologies, responsive frameworks, and advanced backend capabilities such as PHP integration.
-      </p>
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
 
+  
       <div className="skills-container">
         <div className="skills-left">
           <div className="skill-card">

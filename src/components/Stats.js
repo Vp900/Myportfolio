@@ -5,11 +5,7 @@ import { Briefcase, Smile, Coffee, Calendar } from 'lucide-react'; // npm instal
 const statsData = [
   { icon: <Briefcase />, value: 50, label: 'Projects Completed' },
   { icon: <Smile />, value: 45, label: 'Happy Clients' },
-<<<<<<< HEAD
- 
-=======
-  { icon: <Coffee />, value: 500, label: 'Cups of Coffee' },
->>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
+
   { icon: <Calendar />, value: 3, label: 'Years of Experience' },
 ];
 
