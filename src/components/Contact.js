@@ -34,7 +34,11 @@ const Contact = () => {
     <section className="contact-section" id="contact">
       <div className="contact-header">
         <h2>Contact Us</h2>
+<<<<<<< HEAD
        <p>I’d be happy to connect with you! Please share your details below, and I’ll reach out to you as soon as possible.</p>
+=======
+        <p>We’d love to hear from you! Please fill out the form below and we’ll get in touch with you shortly.</p>
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
       </div>
 
       <div className="contact-container">

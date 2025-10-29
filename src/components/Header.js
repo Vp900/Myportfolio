@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import logo from '../assets/logo1 (2).png';
+=======
+import logo from '../assets/logo.png';
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import './Header.css';

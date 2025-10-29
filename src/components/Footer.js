@@ -1,6 +1,10 @@
 import './Footer.css';
 import { Mail, Phone, MapPin} from 'lucide-react';
+<<<<<<< HEAD
 import logo from '../assets/logo1 (2).png';
+=======
+import logo from '../assets/logo.png';
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
 
 export default function Footer() {
   return (
@@ -11,11 +15,19 @@ export default function Footer() {
           {/* Column 1 - Logo & Description */}
           <div className="footer-col">
             <img src={logo} alt="Logo" className="footer-logo" />
+<<<<<<< HEAD
      <p className="footer-desc">
   Hi, I'm Vikas Pal — a passionate Web Developer focused on building modern, responsive, and high-performing websites using React and the latest technologies. I love helping businesses grow their digital presence and make a strong impact online.
 </p>
 
 
+=======
+          <p className="footer-desc">
+  I'm Vikas Pal, a passionate Web Developer building modern, user-friendly websites with React and the latest technologies.
+  I specialize in creating responsive and high-performance websites that help businesses grow their digital presence and stand out online.
+</p>
+
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
 </div>
 
           {/* Column 2 - Quick Links */}
@@ -35,15 +47,25 @@ export default function Footer() {
           <div className="footer-col">
             <h3>Contact Us</h3>
             <ul className="contact-list">
+<<<<<<< HEAD
                     <li>
                 <Phone size={16} />
                 <a href="tel:+919004207813">+91-9004207813</a>
               </li>
+=======
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
               <li>
                 <Mail size={16} />
                 <a href="mailto:vikaspal9004@gmail.com">vikaspal9004@gmail.com</a>
               </li>
+<<<<<<< HEAD
         
+=======
+              <li>
+                <Phone size={16} />
+                <a href="tel:+919004207813">+91-9004207813</a>
+              </li>
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
               <li>
                 <MapPin size={16} />
                 <a href="https://www.google.com/maps?q=Wadala+East,+Mumbai,+400037" target="_blank" rel="noopener noreferrer">

@@ -5,7 +5,11 @@
 }
 
 .section-subtitle {
+<<<<<<< HEAD
   color: #1e6688;
+=======
+  color: #b1b493;
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
@@ -77,7 +81,11 @@
   height: 400px;
   border-radius: 25%;
   object-fit: cover;
+<<<<<<< HEAD
   border: 6px solid #1e6688;;
+=======
+  border: 6px solid #b1b493;
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
 }
 
 .skill-card {
@@ -93,7 +101,11 @@
 
 .skill-icon {
   font-size: 32px;
+<<<<<<< HEAD
   color: #1e6688;
+=======
+  color: #b1b493;
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
   min-width: 32px;
 }
 
@@ -121,7 +133,11 @@
   }
 
   .skill-card {
+<<<<<<< HEAD
     text-align: leftr;
+=======
+    text-align: center;
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
     justify-content: center;
     margin: 0 !important;
   }

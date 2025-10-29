@@ -2,12 +2,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+<<<<<<< HEAD
   margin-top: 150px;
   flex-wrap: wrap;
   gap: 40px;
   padding-left: 100px;
 
   background: linear-gradient(180deg, #FFFFFF 0%, #21bedb 100%);
+=======
+  margin-top: 100px;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-left: 100px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E3F2FD 100%);
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
   color: #000;
 }
 
@@ -53,6 +61,7 @@
   max-width: 600px;
 }
 
+<<<<<<< HEAD
 a{
   text-decoration: none;
   color: white;
@@ -60,6 +69,10 @@ a{
 
 .hero-subheading {
   color: #1e6688; /* Sky Blue */
+=======
+.hero-subheading {
+  color: #00B0FF; /* Sky Blue */
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -75,7 +88,11 @@ a{
 }
 
 .hero-heading span {
+<<<<<<< HEAD
   color: #1e6688; /* Royal Blue */
+=======
+  color: #2962FF; /* Royal Blue */
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
 }
 
 .hero-description {
@@ -104,23 +121,40 @@ a{
 }
 
 .btn.filled {
+<<<<<<< HEAD
   background-color: #1e6688; /* Royal Blue */
+=======
+  background-color: #2962FF; /* Royal Blue */
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
   color: #FFFFFF;
   border: none;
 }
 
 .btn.filled:hover {
+<<<<<<< HEAD
   background-color: #1e6688; /* Deep Blue */
+=======
+  background-color: #0039CB; /* Deep Blue */
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
 }
 
 .btn.outlined {
   background: transparent;
+<<<<<<< HEAD
   border: 2px solid #1e6688;
   color: #1e6688;
 }
 
 .btn.outlined:hover {
   background-color: #21bedb;
+=======
+  border: 2px solid #2962FF;
+  color: #2962FF;
+}
+
+.btn.outlined:hover {
+  background-color: #0039CB;
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
   color: #FFFFFF;
 }
 
@@ -132,6 +166,10 @@ a{
 .hero-image img {
   max-width: 100%;
   height: auto;
+<<<<<<< HEAD
   margin-bottom: -4px;
+=======
+  margin-bottom: -10px;
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
   border-radius: 8px;
 }

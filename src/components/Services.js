@@ -54,7 +54,11 @@ export default function Services() {
     <section className="services-section">
       <div className="services-heading">
         <h2>My Services</h2>
+<<<<<<< HEAD
         <p>I offer a comprehensive range of website design and development services to help bring your digital vision to life. My focus is on creating functional, visually engaging, and performance-driven websites that leave a lasting impact.</p>
+=======
+        <p>I offer a wide range of website design and development services to help bring your digital presence to life.</p>
+>>>>>>> 4ce24a08e72d30bd451793532c70ab6104df8b9f
       </div>
       <div className="services-grid">
         {servicesData.map((service, index) => (
