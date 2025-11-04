@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Stats.css';
-import { Briefcase, Smile, Coffee, Calendar } from 'lucide-react'; // npm install lucide-react
+import { Briefcase, Smile, Calendar } from 'lucide-react'; // Removed Coffee
 
 const statsData = [
   { icon: <Briefcase />, value: 50, label: 'Projects Completed' },
   { icon: <Smile />, value: 45, label: 'Happy Clients' },
-
   { icon: <Calendar />, value: 3, label: 'Years of Experience' },
 ];
 
@@ -17,7 +16,7 @@ const StatItem = ({ icon, value, label }) => {
     const end = value;
     if (start === end) return;
 
-    let incrementTime = 20;
+    const incrementTime = 20;
     const totalDuration = 1000; // 1 second
     const steps = totalDuration / incrementTime;
     const increment = end / steps;
