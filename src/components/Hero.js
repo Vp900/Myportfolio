@@ -41,7 +41,7 @@ export default function Hero() {
 
           <button className="btn filled"><a href="#projects">Projects</a></button>
 
-          <a href="/vikas-pal-cv.pdf" download className="btn outlined">Download CV</a>
+          <a href="/Vikas_Pal_FullStack_Developer_Resume.pdf" download className="btn outlined">Download CV</a>
         </div>
       </div>
       <div className="hero-image">
