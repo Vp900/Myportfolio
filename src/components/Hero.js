@@ -5,22 +5,23 @@ import heroImage from '../assets/vikaspic.png';
 import { useEffect, useState } from 'react';
 
 export default function Hero() {
-  const banners = [
-    {
-
-      subheading: 'I DESIGN & BUILD BRANDS',
-
-      heading: 'Hi, I am Vikas Pal',
-      description: 'This is my favorite work.',
-    },
-    {
-
-      subheading: 'I DESIGN & BUILD BRANDS',
-
-      heading: 'Hi, I am Vikas Pal',
-      description: 'Designing impactful digital experiences.',
-    },
-  ];
+const banners = [
+  {
+    subheading: 'Full Stack Website Developer • MERN Stack',
+    heading: 'Hi, I am Vikas Pal',
+    description: 'I develop modern, responsive and high-performance websites.',
+  },
+  {
+    subheading: 'Front-End & Back-End Web Development',
+    heading: 'Hi, I am Vikas Pal',
+    description: 'Building clean UI/UX, dynamic functionality and smooth web experiences.',
+  },
+  {
+    subheading: 'WordPress • Shopify • Custom MERN Websites',
+    heading: 'Hi, I am Vikas Pal',
+    description: 'Creating business, portfolio and e-commerce websites with quality and precision.',
+  },
+];
 
   const [current, setCurrent] = useState(0);
 
