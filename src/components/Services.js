@@ -1,51 +1,61 @@
 import './Services.css';
-import { FaLaptopCode, FaPaintBrush, FaWordpress, FaShoppingCart, FaRedo, FaFileAlt, FaTools, FaServer, FaTachometerAlt } from 'react-icons/fa';
+import { 
+  FaLaptopCode, 
+  FaPaintBrush, 
+  FaWordpress, 
+  FaShoppingCart, 
+  FaRedo, 
+  FaFileAlt, 
+  FaTools, 
+  FaServer, 
+  FaTachometerAlt 
+} from 'react-icons/fa';
 
 const servicesData = [
   {
     icon: <FaLaptopCode />,
     title: 'Front-End Development',
-    description: 'Pixel-perfect websites using HTML, CSS, JavaScript, and React.js with responsive layouts.',
+    description: 'High-quality, responsive web interfaces using HTML, CSS, JavaScript, React.js, and Bootstrap with clean UI/UX.',
   },
   {
     icon: <FaPaintBrush />,
     title: 'Custom Website Design',
-    description: 'Unique, brand-focused, and user-friendly designs tailored for your business needs.',
+    description: 'Modern, brand-focused, and user-centric designs crafted to provide an engaging and seamless experience.',
   },
   {
     icon: <FaWordpress />,
-    title: 'WordPress Development',
-    description: 'Dynamic websites with easy content management using WordPress and Elementor.',
+    title: 'WordPress & CMS Development',
+    description: 'Custom WordPress themes, Elementor setups, CMS panels, and fully manageable websites for easy updates.',
   },
   {
     icon: <FaShoppingCart />,
     title: 'E-Commerce Development',
-    description: 'Online stores built with Shopify or WooCommerce, including Razorpay integration.',
+    description: 'Shopify & WooCommerce stores with product setup, payment gateways, cart functionality, and smooth checkout.',
   },
   {
     icon: <FaRedo />,
-    title: 'Website Redesign',
-    description: 'Revamp your old website into a modern, fast, and mobile-friendly experience.',
+    title: 'Website Redesign & Revamp',
+    description: 'Transform outdated websites into modern, fast, and mobile-friendly versions with improved UI/UX.',
   },
   {
     icon: <FaFileAlt />,
-    title: 'Landing Page Design',
-    description: 'Single-page high-conversion designs perfect for campaigns and promotions.',
+    title: 'Landing Page Development',
+    description: 'High-conversion landing pages designed for marketing campaigns, lead generation, or product promotions.',
   },
   {
     icon: <FaTools />,
-    title: 'Maintenance & Bug Fixes',
-    description: 'Regular updates, issue fixing, and reliable support for smooth performance.',
+    title: 'Maintenance, Support & Bug Fixes',
+    description: 'Regular updates, troubleshooting, security fixes, and continuous support for smooth performance.',
   },
   {
     icon: <FaServer />,
-    title: 'Domain & Hosting Setup',
-    description: 'Assistance with domain, hosting, SSL, and email configuration for your site.',
+    title: 'Backend & API Development',
+    description: 'Node.js, Express.js APIs, MongoDB database setup, CRUD systems, and secure server-side functionality.',
   },
   {
     icon: <FaTachometerAlt />,
-    title: 'Speed Optimization',
-    description: 'Improve loading time with image optimization, minified files, and lazy loading.',
+    title: 'Performance & Speed Optimization',
+    description: 'Improve loading speed with caching, minification, image optimization, and performance monitoring.',
   }
 ];
 
@@ -55,9 +65,15 @@ export default function Services() {
       <div className="services-heading">
         <h2>My Services</h2>
 
-        <p>I offer a comprehensive range of website design and development services to help bring your digital vision to life. My focus is on creating functional, visually engaging, and performance-driven websites that leave a lasting impact.</p>
+        <p>
+          I provide end-to-end website development solutions — from design and
+          front-end to backend, CMS customization, API integration, and deployment.
+          My goal is to deliver professional, scalable, and performance-driven
+          websites that help businesses grow and stand out online.
+        </p>
 
-         </div>
+      </div>
+
       <div className="services-grid">
         {servicesData.map((service, index) => (
           <div className="service-card" key={index}>
