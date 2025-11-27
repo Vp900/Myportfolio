@@ -4,7 +4,7 @@ import './about.css';
 
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
-import aboutImage from '../assets/aboutpic.jpeg';
+import aboutImage from '../assets/aboutpic.jpg';
 
 export default function About() {
   return (
@@ -17,10 +17,13 @@ export default function About() {
         <div className="about-right">
           <h2 className="main-heading">About Me</h2>
           <p className="description">
-            I’m a passionate and detail-oriented Web Developer with hands-on experience in crafting dynamic, user-focused websites and web applications. My expertise spans across HTML, CSS, JavaScript, React.js, PHP, WordPress, Shopify, Bootstrap, SQL, and Python, allowing me to build everything from sleek front-end designs to efficient, data-driven back-end systems. I take pride in writing clean, optimized code and ensuring every website I create is fully responsive, intuitive, and aligned with the client’s goals.
-            <br /><br />
-            Beyond just coding, I enjoy bringing ideas to life through creative problem-solving and modern web technologies. Whether it’s customizing a CMS, developing a robust e-commerce platform, or enhancing user experience, I’m dedicated to delivering high-quality, impactful web solutions that drive results. I constantly explore new tools and frameworks to stay ahead in the ever-evolving digital landscape and to create web experiences that truly stand out.
-          </p>
+           I’m a dedicated and detail-oriented Website Developer with strong experience in creating modern, responsive and high-quality websites. I specialize in HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, WordPress, Shopify, and Bootstrap allowing me to build everything from custom business websites to clean and functional e-commerce platforms.
+<br></br><br></br>
+With 3+ years of hands-on experience, I focus on delivering websites that are fast, user-friendly and aligned with each client’s goals. I enjoy improving UI/UX, customizing themes, optimizing performance, and developing smooth, interactive web experiences.
+<br></br><br></br>
+I believe in writing clean, structured code and continuously learning new tools and technologies to stay updated in the evolving digital world. My goal is simple to create websites that not only look great but also perform exceptionally well and help businesses grow online.
+<br></br><br></br>
+            </p>
 
           <ul className="info-list">
             <div className="info">
