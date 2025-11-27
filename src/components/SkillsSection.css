@@ -47,25 +47,25 @@
 }
 
 .skills-left .skill-card:nth-child(1) {
-  margin-left: 50px; /* HTML inside */
+  margin-left: 0px; /* HTML inside */
 }
 .skills-left .skill-card:nth-child(2) {
   margin-left: 0;
-  margin-right: 50px; /* CSS outside */
+  margin-right: 0px; /* CSS outside */
 }
 .skills-left .skill-card:nth-child(3) {
-  margin-left: 50px; /* JS inside */
+  margin-left: 0px; /* JS inside */
 }
 
 .skills-right .skill-card:nth-child(1) {
-  margin-right: 50px; /* Bootstrap inside */
+  margin-right: 0px; /* Bootstrap inside */
 }
 .skills-right .skill-card:nth-child(2) {
   margin-right: 0;
-  margin-left: 50px;  /* WordPress outside */
+  margin-left: 0px;  /* WordPress outside */
 }
 .skills-right .skill-card:nth-child(3) {
-  margin-right: 50px; /* Shopify inside */
+  margin-right: 0px; /* Shopify inside */
 }
 
 .skills-center {
