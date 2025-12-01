@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vikas Pal",
+  "alternateName": "Vikas Full Stack Developer",
+  "url": "https://vikaspalprojects.netlify.app/",
+  "image": "https://vikaspalprojects.netlify.app/profile.jpg",
+  "jobTitle": "Full Stack Developer",
+  "knowsAbout": [
+    "ReactJS",
+    "NodeJS",
+    "MongoDB",
+    "JavaScript",
+    "Full Stack Development"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/vikaspal9004/",
+    "https://github.com/Vp900"
+  ],
+  "email": "mailto:vikaspal9004@gmail.com",
+  "telephone": "+919004207813",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Wadala East",
+    "addressRegion": "Mumbai",
+    "postalCode": "400037",
+    "addressCountry": "IN"
+  }
+}
