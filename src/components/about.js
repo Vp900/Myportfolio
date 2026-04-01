@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './about.css';
 import { FaLinkedinIn, FaGithub, FaAward, FaProjectDiagram, FaUserCheck } from 'react-icons/fa';
-import { MdEmail, MdLocationOn, MdPhone } from 'react-icons/md';
+import { MdEmail, MdPhone } from 'react-icons/md';
 import aboutImage from '../assets/aboutnew.png';
 
 gsap.registerPlugin(ScrollTrigger);

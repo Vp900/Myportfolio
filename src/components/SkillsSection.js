@@ -3,13 +3,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./SkillsSection.css";
 import {
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase,
-  FaWordpress, FaShopify, FaGitAlt, FaRobot, FaSms, FaNetworkWired,
-  FaPython, FaDocker, FaAws, FaFireAlt
+  FaHtml5, FaJs, FaReact, FaNodeJs, FaDatabase,
+  FaWordpress, FaShopify, FaGitAlt, FaSms, FaNetworkWired,
+  FaPython, FaDocker
 } from "react-icons/fa";
 import {
   SiTailwindcss, SiOpenai, SiWhatsapp, SiJsonwebtokens,
-  SiSocketdotio, SiNextdotjs, SiRedux, SiPostgresql, SiRedis,
+  SiSocketdotio, SiNextdotjs, SiRedux, SiRedis,
   SiZapier, SiStrapi, SiContentful, SiMysql
 } from "react-icons/si";
 
