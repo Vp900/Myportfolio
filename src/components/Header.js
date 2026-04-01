@@ -1,84 +1,136 @@
-
+import React, { useState, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 import logo from '../assets/logo1 (2).png';
-import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import './Header.css';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeLink, setActiveLink] = useState('#home');
+  const [isScrolled, setIsScrolled] = useState(false);
+  const mobileMenuRef = useRef(null);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  // Scroll detection for sticky header
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
+  // Section observer for active link
+  useEffect(() => {
+    const sections = ['home', 'about', 'skill', 'services', 'projects', 'contact'];
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
+    };
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveLink(`#${entry.target.id}`);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  // GSAP Animation for Mobile Menu
+  useEffect(() => {
+    if (menuOpen) {
+      gsap.fromTo(mobileMenuRef.current, 
+        { x: '100%', opacity: 0 },
+        { x: '0%', opacity: 1, duration: 0.5, ease: 'power3.out' }
+      );
+    }
+  }, [menuOpen]);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => {
-    setMenuOpen(false);
+    gsap.to(mobileMenuRef.current, {
+      x: '100%',
+      opacity: 0,
+      duration: 0.3,
+      ease: 'power3.in',
+      onComplete: () => setMenuOpen(false)
+    });
   };
 
-  const handleLinkClick = (hash) => {
-    setActiveLink(hash);
-    closeMenu();
-  };
+  const navLinks = [
+    { label: 'Home', hash: '#home' },
+    { label: 'About Us', hash: '#about' },
+    { label: 'Skills', hash: '#skill' },
+    { label: 'Services', hash: '#services' },
+    { label: 'Projects', hash: '#projects' },
+    { label: 'Contact', hash: '#contact' },
+  ];
 
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        {/* Logo */}
-        <div className="logo">
-          <img src={logo} alt="VIKAS Logo" style={{ height: '40px' }} />
+        <div className="logo-wrapper">
+          <img src={logo} alt="VIKAS Logo" />
         </div>
 
-        {/* Desktop Navigation */}
         <nav className="nav-links">
-          <a href="#home" className={`nav-link${activeLink === '#home' ? ' active' : ''}`} onClick={() => handleLinkClick('#home')}>Home</a>
-          <a href="#about" className={`nav-link${activeLink === '#about' ? ' active' : ''}`} onClick={() => handleLinkClick('#about')}>About Us</a>
-          <a href="#skill" className={`nav-link${activeLink === '#skill' ? ' active' : ''}`} onClick={() => handleLinkClick('#skill')}>Skill</a>
-          <a href="#services" className={`nav-link${activeLink === '#services' ? ' active' : ''}`} onClick={() => handleLinkClick('#services')}>Services</a>
-          <a href="#projects" className={`nav-link${activeLink === '#projects' ? ' active' : ''}`} onClick={() => handleLinkClick('#projects')}>Projects</a>
-          <a href="#contact" className={`nav-link${activeLink === '#contact' ? ' active' : ''}`} onClick={() => handleLinkClick('#contact')}>Contact</a>
+          {navLinks.map((link) => (
+            <a
+              key={link.hash}
+              href={link.hash}
+              className={`nav-link ${activeLink === link.hash ? 'active' : ''}`}
+              onClick={() => setActiveLink(link.hash)}
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
-        {/* Call Us Button */}
-      <div className="call-button-wrapper">
-  <a href="tel:9004207813" className="call-button">Call Now</a>
-</div>
+        <div className="call-button-wrapper">
+          <a href="tel:9004207813" className="call-button">Call Now</a>
+        </div>
 
-
-        {/* Mobile Menu Toggle (Only show when menu is closed) */}
-        {!menuOpen && (
-          <button className="menu-toggle" onClick={toggleMenu}>
-            <Menu size={24} />
-          </button>
-        )}
+        <button className="menu-toggle" onClick={toggleMenu}>
+          <Menu size={28} />
+        </button>
       </div>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="mobile-overlay" onClick={closeMenu}>
           <div
             className="mobile-menu"
+            ref={mobileMenuRef}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close Button in Top Right inside menu */}
             <button className="mobile-close-button" onClick={closeMenu}>
-              <X size={24} />
+              <X size={28} />
             </button>
-
-            {/* Menu Links */}
-            <a href="#home" className={`mobile-link${activeLink === '#home' ? ' active' : ''}`} onClick={() => handleLinkClick('#home')}>Home</a>
-            <a href="#about" className={`mobile-link${activeLink === '#about' ? ' active' : ''}`} onClick={() => handleLinkClick('#about')}>About Us</a>
-            <a href="#skill" className={`mobile-link${activeLink === '#skill' ? ' active' : ''}`} onClick={() => handleLinkClick('#skill')}>Skill</a>
-            <a href="#services" className={`mobile-link${activeLink === '#services' ? ' active' : ''}`} onClick={() => handleLinkClick('#services')}>Services</a>
-            <a href="#projects" className={`mobile-link${activeLink === '#projects' ? ' active' : ''}`} onClick={() => handleLinkClick('#projects')}>Projects</a>
-            <a href="#contact" className={`mobile-link${activeLink === '#contact' ? ' active' : ''}`} onClick={() => handleLinkClick('#contact')}>Contact</a>
-
-            {/* Call Button */}
-          <a href="tel:9004207813" className="call-button w-full">Call Now</a>
-
+            {navLinks.map((link) => (
+              <a
+                key={link.hash}
+                href={link.hash}
+                className={`mobile-link ${activeLink === link.hash ? 'active' : ''}`}
+                onClick={() => {
+                  setActiveLink(link.hash);
+                  closeMenu();
+                }}
+              >
+                {link.label}
+              </a>
+            ))}
+            <a href="tel:9004207813" className="call-button" style={{ textAlign: 'center', marginTop: '20px' }}>Call Now</a>
           </div>
         </div>
       )}
     </header>
   );
-}
+}

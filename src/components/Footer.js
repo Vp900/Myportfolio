@@ -1,54 +1,86 @@
+import React from 'react';
 import './Footer.css';
-import { Mail, Phone, MapPin} from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import { FaLinkedinIn, FaGithub, FaWhatsapp, FaArrowUp } from 'react-icons/fa';
 import logo from '../assets/logo1 (2).png';
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="footer">
+      <div className="footer-top-gradient"></div>
       <div className="footer-container">
-        {/* Row 1 */}
-        <div className="footer-row">
-          {/* Column 1 - Logo & Description */}
-          <div className="footer-col">
-            <img src={logo} alt="Logo" className="footer-logo" />
-            <p className="footer-desc">
-              I'm Vikas Pal, a passionate Web Developer building modern, user-friendly websites with React and the latest technologies.
-              I specialize in creating responsive and high-performance websites that help businesses grow their digital presence and stand out online.
+        <div className="footer-grid">
+          {/* Column 1: Branding & Bio */}
+          <div className="footer-column branding">
+            <img src={logo} alt="Vikas Pal Logo" className="footer-logo" />
+            <p className="footer-bio">
+              Empowering businesses with scalable, high-performance web solutions. Specialized in Full Stack Development, AI Automation, and Bulk Messaging Systems.
             </p>
           </div>
 
-          {/* Column 2 - Quick Links */}
-          <div className="footer-col">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#home" aria-label="Navigate to Home section">Home</a></li>
-              <li><a href="#about" aria-label="Navigate to About Us section">About Us</a></li>
-              <li><a href="#skill" aria-label="Navigate to Skill section">Skill</a></li>
-              <li><a href="#services" aria-label="Navigate to Services section">Services</a></li>
-              <li><a href="#projects" aria-label="Navigate to Projects section">Projects</a></li>
-              <li><a href="#contact" aria-label="Navigate to Contact section">Contact</a></li>
+          {/* Column 2: Quick Links */}
+          <div className="footer-column">
+            <h3 className="column-title">Quick Navigation</h3>
+            <ul className="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#skill">Skills</a></li>
+              <li><a href="#projects">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
 
-          {/* Column 3 - Contact Info */}
-          <div className="footer-col">
-            <h3>Contact Us</h3>
-            <address className="contact-list">
-              <div>
-                <Phone size={16} /> <a href="tel:+919004207813">+91-9004207813</a>
+          {/* Column 3: Expert Services */}
+          <div className="footer-column">
+            <h3 className="column-title">Expert Services</h3>
+            <ul className="footer-links">
+              <li><a href="#services">Full Stack Web Dev</a></li>
+              <li><a href="#services">AI & Chatbot Integration</a></li>
+              <li><a href="#services">Automated Messaging</a></li>
+              <li><a href="#services">CMS & Ecommerce</a></li>
+              <li><a href="#services">SEO & Performance</a></li>
+            </ul>
+          </div>
+
+          {/* Column 4: Contact & Office */}
+          <div className="footer-column">
+            <h3 className="column-title">Get In Touch</h3>
+            <div className="contact-info">
+              <div className="contact-item">
+                <Phone size={18} className="contact-icon" />
+                <a href="tel:+919004207813">+91 9004207813</a>
               </div>
-              <div>
-                <Mail size={16} /> <a href="mailto:vikaspal9004@gmail.com">vikaspal9004@gmail.com</a>
+              <div className="contact-item">
+                <Mail size={18} className="contact-icon" />
+                <a href="mailto:vikaspal9004@gmail.com">vikaspal9004@gmail.com</a>
               </div>
-              <div>
-                <MapPin size={16} /> <a href="https://www.google.com/maps?q=Wadala+East,+Mumbai,+400037" target="_blank" rel="noopener noreferrer">Wadala East, Mumbai, 400037</a>
+              <div className="contact-item">
+                <MapPin size={18} className="contact-icon" />
+                <span>Wadala East, Mumbai, 400037</span>
               </div>
-            </address>
+            </div>
           </div>
         </div>
-        {/* Row 2 - Copyright */}
+
+        {/* Footer Bottom Bar */}
         <div className="footer-bottom">
-          <p>&copy; 2025 Developed by Vikas Pal. All rights reserved.</p>
+          <div className="copyright">
+            <p>&copy; {new Date().getFullYear()} <strong>Vikas Pal</strong>. Created and designed by <strong>Eng Vikas Pal</strong>.</p>
+          </div>
+
+          <div className="footer-social-bottom">
+            <a href="https://www.linkedin.com/in/vikaspal9004" target="_blank" rel="noopener noreferrer" className="social-icon linkedin"><FaLinkedinIn /></a>
+            <a href="https://github.com/Vp900" target="_blank" rel="noopener noreferrer" className="social-icon github"><FaGithub /></a>
+            <a href="https://wa.me/919004207813" target="_blank" rel="noopener noreferrer" className="social-icon whatsapp"><FaWhatsapp /></a>
+          </div>
+
+          <button className="back-to-top" onClick={scrollToTop} aria-label="Scroll to top">
+            <FaArrowUp />
+          </button>
         </div>
       </div>
     </footer>

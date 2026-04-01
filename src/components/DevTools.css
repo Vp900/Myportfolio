@@ -1,0 +1,117 @@
+.devtools-section {
+  padding: 10px 20px 80px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.devtools-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.devtools-section .section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.devtools-section .section-title .highlight {
+  color: #1e6688; /* Matching the theme color from SkillsSection */
+}
+
+.devtools-section .section-subtitle {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.devtools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.tool-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  text-align: left;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  border-color: #1e6688;
+}
+
+.tool-icon-wrapper {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+}
+
+.tool-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 4px 0;
+}
+
+.tool-info p {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+}
+
+/* Response for Mobile & Tablets */
+@media screen and (max-width: 1024px) {
+  .devtools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .devtools-section {
+    padding: 60px 15px;
+  }
+  
+  .devtools-section .section-title {
+    font-size: 28px;
+  }
+  
+  .devtools-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  
+  .tool-card {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .devtools-grid {
+    grid-template-columns: 1fr; /* Single column on very small phones */
+  }
+  
+  .tool-card {
+    padding: 12px 15px;
+  }
+
+  .tool-icon-wrapper {
+    font-size: 28px;
+  }
+}
