@@ -1,0 +1,227 @@
+/* === GLOBAL RESPONSIVE IMPROVEMENTS === */
+
+/* Header responsive */
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 0 15px;
+  }
+}
+
+/* Hero responsive */
+@media screen and (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px 15px;
+  }
+
+  .hero-title {
+    font-size: clamp(28px, 7vw, 42px) !important;
+  }
+
+  .hero-desc {
+    font-size: 15px !important;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-image-box {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+/* Stats responsive */
+@media screen and (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px;
+  }
+
+  .stat-card {
+    padding: 20px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* About responsive */
+@media screen and (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
+
+  .about-visual {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Experience section responsive */
+@media screen and (max-width: 768px) {
+  .experience-section {
+    padding: 60px 0;
+  }
+
+  .title-exp {
+    font-size: 26px !important;
+  }
+
+  .exp-tabs {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .tab-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .experience-card {
+    padding: 20px !important;
+  }
+
+  .exp-card-header {
+    flex-direction: column;
+  }
+
+  .role-title {
+    font-size: 18px !important;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .certifications-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .exp-tabs {
+    gap: 8px;
+  }
+}
+
+/* Skills responsive */
+@media screen and (max-width: 768px) {
+  .skills-grid-v2 {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .skill-card-v2 {
+    height: auto !important;
+    min-height: 300px;
+  }
+}
+
+/* Services responsive */
+@media screen and (max-width: 900px) {
+  .featured-services-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .specialist-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .specialist-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* DevTools responsive */
+@media screen and (max-width: 768px) {
+  .devtools-section {
+    padding: 60px 15px !important;
+  }
+
+  .devtools-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px;
+  }
+
+  .tools-filter-bar {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .devtools-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .tool-card {
+    padding: 14px;
+  }
+}
+
+/* Contact responsive */
+@media screen and (max-width: 768px) {
+  .contact-grid-v3 {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+
+  .luxury-title {
+    font-size: 26px !important;
+  }
+}
+
+/* Footer responsive */
+@media screen and (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* Filter bar general */
+@media screen and (max-width: 540px) {
+  .tools-filter-bar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+  }
+
+  .tools-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+

@@ -1,5 +1,5 @@
 .devtools-section {
-  padding: 10px 20px 80px;
+  padding: 70px 20px 70px;
   background-color: #ffffff;
   text-align: center;
 }
@@ -7,6 +7,21 @@
 .devtools-section .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.devtools-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.devtools-header .subtitle {
+  display: inline-block;
+  color: #1e6688;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
 }
 
 .devtools-section .section-title {
@@ -24,8 +39,41 @@
   font-size: 16px;
   color: #666;
   max-width: 800px;
-  margin: 0 auto 50px;
+  margin: 0 auto 35px;
   line-height: 1.6;
+}
+
+.tools-filter-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.filter-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.filter-btn.active {
+  background: #1e6688;
+  color: #ffffff;
+  border-color: #1e6688;
+  box-shadow: 0 4px 14px rgba(30, 102, 136, 0.25);
 }
 
 .devtools-grid {

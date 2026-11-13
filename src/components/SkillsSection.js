@@ -3,14 +3,14 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./SkillsSection.css";
 import {
-  FaHtml5, FaJs, FaReact, FaNodeJs, FaDatabase,
-  FaWordpress, FaShopify, FaGitAlt, FaSms, FaNetworkWired,
-  FaPython, FaDocker
+  FaHtml5, FaJs, FaReact, FaNodeJs, FaBootstrap,
+  FaWordpress, FaShopify, FaNetworkWired,
+  FaPython, FaPhp, FaDatabase, FaBolt
 } from "react-icons/fa";
 import {
-  SiTailwindcss, SiOpenai, SiWhatsapp, SiJsonwebtokens,
-  SiSocketdotio, SiNextdotjs, SiRedux, SiRedis,
-  SiZapier, SiStrapi, SiContentful, SiMysql
+  SiTailwindcss, SiMongodb, SiPostgresql, SiSupabase, SiMysql,
+  SiJquery, SiWoocommerce, SiElementor,
+  SiAxios, SiJsonwebtokens, SiFigma
 } from "react-icons/si";
 
 // Import local images for cards
@@ -23,51 +23,51 @@ gsap.registerPlugin(ScrollTrigger);
 
 const skillGroups = [
   {
-    title: "Core Web Technologies",
+    title: "Frontend Development",
     image: frontendImg,
     skills: [
       { name: "React.js", icon: <FaReact /> },
-      { name: "Next.js", icon: <SiNextdotjs /> },
-      { name: "JavaScript", icon: <FaJs /> },
-      { name: "Redux", icon: <SiRedux /> },
-      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "JavaScript (ES6+)", icon: <FaJs /> },
       { name: "HTML5 & CSS3", icon: <FaHtml5 /> },
+      { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+      { name: "Bootstrap", icon: <FaBootstrap /> },
+      { name: "jQuery & Responsive", icon: <SiJquery /> },
     ]
   },
   {
-    title: "Backend & Systems",
+    title: "Backend & RESTful APIs",
     image: backendImg,
     skills: [
-      { name: "Node & Express", icon: <FaNodeJs /> },
-      { name: "MySQL", icon: <SiMysql /> },
-      { name: "MongoDB", icon: <FaDatabase /> },
-      { name: "Redis", icon: <SiRedis /> },
-      { name: "System Arch", icon: <FaNetworkWired /> },
-      { name: "Auth (JWT)", icon: <SiJsonwebtokens /> },
+      { name: "Node.js & Express", icon: <FaNodeJs /> },
+      { name: "Python", icon: <FaPython /> },
+      { name: "PHP", icon: <FaPhp /> },
+      { name: "RESTful APIs", icon: <FaNetworkWired /> },
+      { name: "JWT Authentication", icon: <SiJsonwebtokens /> },
+      { name: "Axios & Fetch API", icon: <SiAxios /> },
     ]
   },
   {
-    title: "AI & Automation",
+    title: "Database Management",
     image: aiImg,
     skills: [
-      { name: "AI Integration", icon: <SiOpenai /> },
-      { name: "Python Scripts", icon: <FaPython /> },
-      { name: "WhatsApp API", icon: <SiWhatsapp /> },
-      { name: "Zapier Auto", icon: <SiZapier /> },
-      { name: "Real-time Sockets", icon: <SiSocketdotio /> },
-      { name: "Docker/AWS", icon: <FaDocker /> },
+      { name: "MongoDB", icon: <SiMongodb /> },
+      { name: "PostgreSQL", icon: <SiPostgresql /> },
+      { name: "Supabase", icon: <SiSupabase /> },
+      { name: "MySQL", icon: <SiMysql /> },
+      { name: "Mongoose ODM", icon: <FaDatabase /> },
+      { name: "CRUD Operations", icon: <FaDatabase /> },
     ]
   },
   {
-    title: "CMS & Ecommerce",
+    title: "CMS, E-Commerce & UI/UX",
     image: cmsImg,
     skills: [
       { name: "WordPress", icon: <FaWordpress /> },
       { name: "Shopify", icon: <FaShopify /> },
-      { name: "Strapi Headless", icon: <SiStrapi /> },
-      { name: "Contentful", icon: <SiContentful /> },
-      { name: "Version Control", icon: <FaGitAlt /> },
-      { name: "CPaaS Systems", icon: <FaSms /> },
+      { name: "WooCommerce", icon: <SiWoocommerce /> },
+      { name: "Elementor", icon: <SiElementor /> },
+      { name: "Figma & Photoshop", icon: <SiFigma /> },
+      { name: "SEO & Optimization", icon: <FaBolt /> },
     ]
   }
 ];
@@ -78,7 +78,7 @@ const SkillsSection = () => {
   useEffect(() => {
     const cards = sectionRef.current.querySelectorAll('.skill-card-v2');
 
-    cards.forEach((card, i) => {
+    cards.forEach((card) => {
       // Entrance Animation for Cards
       gsap.fromTo(card,
         { opacity: 0, y: 50, rotateX: -10 },
@@ -139,11 +139,11 @@ const SkillsSection = () => {
     <section className="skills-section-v2" id="skill" ref={sectionRef}>
       <div className="container">
         <div className="skills-header-v2">
-          <span className="subtitle-v2">Expertise & Tools</span>
+          <span className="subtitle-v2">Expertise & Technologies</span>
           <h2 className="main-title-v2">Technical Skillset</h2>
           <p className="description-v2">
-            Elevating digital products with high-performance architectures, AI-driven workflows,
-            and scalable web solutions optimized for the modern era.
+            Professional skill stack aligned with industry standards — specializing in modern frontend,
+            scalable backend architectures, database management, CMS platforms, and clean code principles.
           </p>
         </div>
 

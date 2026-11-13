@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="footer-column branding">
             <img src={logo} alt="Vikas Pal Logo" className="footer-logo" />
             <p className="footer-bio">
-              Empowering businesses with scalable, high-performance web solutions. Specialized in Full Stack Development, AI Automation, and Bulk Messaging Systems.
+              Empowering businesses with scalable, high-performance web solutions. Specialized in Full Stack Development (React.js, Node.js, Python), Database Systems (MongoDB, PostgreSQL, Supabase), and CMS Solutions (WordPress, Shopify).
             </p>
           </div>
 
@@ -28,8 +28,11 @@ export default function Footer() {
             <ul className="footer-links">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About Me</a></li>
+              <li><a href="#experience">Experience & Education</a></li>
               <li><a href="#skill">Skills</a></li>
+              <li><a href="#services">Services</a></li>
               <li><a href="#projects">Portfolio</a></li>
+              <li><a href="#tools">Tools</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -39,10 +42,11 @@ export default function Footer() {
             <h3 className="column-title">Expert Services</h3>
             <ul className="footer-links">
               <li><a href="#services">Full Stack Web Dev</a></li>
-              <li><a href="#services">AI & Chatbot Integration</a></li>
-              <li><a href="#services">Automated Messaging</a></li>
-              <li><a href="#services">CMS & Ecommerce</a></li>
-              <li><a href="#services">SEO & Performance</a></li>
+              <li><a href="#services">RESTful API Architecture</a></li>
+              <li><a href="#services">Database Management</a></li>
+              <li><a href="#services">WordPress & Shopify</a></li>
+              <li><a href="#services">Quiz & ERP Portals</a></li>
+              <li><a href="#services">Speed & SEO Optimization</a></li>
             </ul>
           </div>
 
@@ -60,7 +64,7 @@ export default function Footer() {
               </div>
               <div className="contact-item">
                 <MapPin size={18} className="contact-icon" />
-                <span>Wadala East, Mumbai, 400037</span>
+                <span>Maharishi Nagar, IIM Road, Lucknow, UP - 226013</span>
               </div>
             </div>
           </div>

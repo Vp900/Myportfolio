@@ -2,19 +2,19 @@ import React, { useEffect, useState, useRef } from 'react';
 import { gsap } from 'gsap';
 import './Hero.css';
 import heroImage from '../assets/vikaspic.png'; 
-import { FaReact, FaNodeJs, FaJs, FaDatabase, FaCss3Alt, FaHtml5, FaGitAlt, FaChrome, FaAws, FaDocker, FaPython } from 'react-icons/fa';
-import { SiFirebase } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaJs, FaCss3Alt, FaHtml5, FaGitAlt, FaWordpress, FaShopify, FaPython } from 'react-icons/fa';
+import { SiMongodb, SiPostgresql, SiSupabase } from 'react-icons/si';
 
 const banners = [
   {
-    subheading: 'Vp | Full Stack Developer',
-    heading: 'Crafting Digital Experiences',
-    description: 'Specialized in MERN, AI Integration, and High-Performance Web Architecture.',
+    subheading: 'Vikas Pal | Full Stack Developer',
+    heading: 'Crafting Scalable Full Stack Solutions',
+    description: 'Specialized in React.js, Node.js, Express.js, Python, MongoDB, PostgreSQL, Supabase, WordPress, and Shopify.',
   },
   {
-    subheading: 'Advanced Web solutions',
-    heading: 'Innovative Problem Solving',
-    description: 'Building tools that matter—from custom CRMs to bulk messaging systems.',
+    subheading: '4+ Years of Professional Experience',
+    heading: 'High-Performance Web Architecture',
+    description: 'Building robust RESTful APIs, database-driven applications, ERP systems, and responsive modern web experiences.',
   },
 ];
 
@@ -93,15 +93,15 @@ export default function Hero() {
         <div className="floating-icon icon-1"><FaReact /></div>
         <div className="floating-icon icon-2"><FaJs /></div>
         <div className="floating-icon icon-3"><FaNodeJs /></div>
-        <div className="floating-icon icon-4"><FaDatabase /></div>
+        <div className="floating-icon icon-4"><SiMongodb /></div>
         <div className="floating-icon icon-5"><FaCss3Alt /></div>
         <div className="floating-icon icon-6"><FaHtml5 /></div>
         <div className="floating-icon icon-7"><FaGitAlt /></div>
-        <div className="floating-icon icon-8"><FaChrome /></div>
-        <div className="floating-icon icon-9"><FaAws /></div>
-        <div className="floating-icon icon-10"><FaDocker /></div>
+        <div className="floating-icon icon-8"><SiPostgresql /></div>
+        <div className="floating-icon icon-9"><SiSupabase /></div>
+        <div className="floating-icon icon-10"><FaWordpress /></div>
         <div className="floating-icon icon-11"><FaPython /></div>
-        <div className="floating-icon icon-12"><SiFirebase /></div>
+        <div className="floating-icon icon-12"><FaShopify /></div>
         
         <div className="bg-circle circle-1"></div>
         <div className="bg-circle circle-2"></div>

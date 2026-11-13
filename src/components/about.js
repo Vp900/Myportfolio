@@ -15,7 +15,7 @@ export default function About() {
     const visual = sectionRef.current.querySelector('.about-visual');
     const contentItems = sectionRef.current.querySelector('.about-content').children;
     const highlights = sectionRef.current.querySelectorAll('.highlight-item');
-    
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
@@ -23,20 +23,20 @@ export default function About() {
       }
     });
 
-    tl.fromTo(visual, 
+    tl.fromTo(visual,
       { opacity: 0, x: -50, scale: 0.9 },
       { opacity: 1, x: 0, scale: 1, duration: 1, ease: 'power3.out' }
     )
-    .fromTo(contentItems, 
-      { opacity: 0, y: 30 },
-      { opacity: 1, y: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out' },
-      "-=0.6"
-    )
-    .fromTo(highlights, 
-      { opacity: 0, scale: 0.8 },
-      { opacity: 1, scale: 1, duration: 0.6, stagger: 0.1, ease: 'back.out(1.7)' },
-      "-=0.4"
-    );
+      .fromTo(contentItems,
+        { opacity: 0, y: 30 },
+        { opacity: 1, y: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out' },
+        "-=0.6"
+      )
+      .fromTo(highlights,
+        { opacity: 0, scale: 0.8 },
+        { opacity: 1, scale: 1, duration: 0.6, stagger: 0.1, ease: 'back.out(1.7)' },
+        "-=0.4"
+      );
   }, []);
 
   return (
@@ -48,8 +48,8 @@ export default function About() {
             <div className="image-wrapper">
               <img src={aboutImage} alt="Vikas Pal" className="profile-img" />
               <div className="experience-badge">
-                <span className="years">3+</span>
-                <span className="text">Years of<br/>Experience</span>
+                <span className="years">4+</span>
+                <span className="text">Years of<br />Experience</span>
               </div>
             </div>
             <div className="decorative-shape"></div>
@@ -58,19 +58,19 @@ export default function About() {
           {/* Right: Structured Professional Bio */}
           <div className="about-content">
             <span className="subtitle">Who I Am</span>
-            <h2 className="main-title">Professional Full Stack Developer & AI Enthusiast</h2>
-            
+            <h2 className="main-title">Full Stack Developer & Software Engineer</h2>
+
             <div className="bio-segments">
               <p className="bio-intro">
-                I’m <strong>Vikas Pal</strong>, a dedicated and detail-oriented Full Stack Developer with a passion for building high-performance, scalable, and user-centric digital solutions.
+                I’m <strong>Vikas Pal</strong>, a motivated and results-driven Full Stack Developer skilled in modern web engineering, database architecture, and scalable software solutions.
               </p>
-              
+
               <p className="bio-details">
-                With 3+ years of expertise in the MERN stack (MongoDB, Express, React, Node.js), I specialize in transforming complex business requirements into seamless web experiences. From AI-integrated chatbots to high-volume bulk messaging platforms, my focus is always on <strong>clean code, optimized performance, and exceptional UI/UX</strong>.
+                With <strong>4+ years of professional experience</strong> (April 2022 – April 2026 at <em>Express IT Solution</em>), I specialize in HTML5, CSS3, JavaScript, Python, React.js, Node.js, Express.js, MongoDB, PostgreSQL, Supabase, WordPress, Shopify, and Bootstrap. I develop responsive websites, dynamic web applications, RESTful APIs, and database-driven systems with clean, high-quality code.
               </p>
 
               <p className="bio-vision">
-                I believe that every line of code should serve a purpose. My goal is to help businesses grow by delivering websites that don't just look great, but perform exceptionally well in the real world.
+                Currently pursuing my <strong>Master of Computer Applications (MCA)</strong> at Maharishi University of Information Technology (MUIT), Lucknow, and holding a <strong>Bachelor of Computer Applications (BCA, 71% First Division)</strong> from UPRTOU / KNIPSS.
               </p>
             </div>
 
@@ -86,15 +86,15 @@ export default function About() {
               <div className="highlight-item">
                 <div className="h-icon"><FaAward /></div>
                 <div className="h-text">
-                  <h4>Expert</h4>
-                  <span>AI & Automation</span>
+                  <h4>8+</h4>
+                  <span>Certifications</span>
                 </div>
               </div>
               <div className="highlight-item">
                 <div className="h-icon"><FaUserCheck /></div>
                 <div className="h-text">
-                  <h4>100%</h4>
-                  <span>Client Focused</span>
+                  <h4>MCA & BCA</h4>
+                  <span>Higher Education</span>
                 </div>
               </div>
             </div>

@@ -183,16 +183,62 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
+  .projects-section {
+    padding: 60px 0;
+  }
+
   .section-title {
-    font-size: 32px;
+    font-size: 26px;
+  }
+
+  .section-desc {
+    font-size: 15px;
+    padding: 0 15px;
   }
   
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 25px;
+    gap: 20px;
+    padding: 0 15px;
   }
 
   .project-image-wrapper {
-    height: 180px;
+    height: 200px;
+  }
+
+  .tools-filter-bar {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .project-image-wrapper {
+    height: 170px;
+  }
+
+  .project-info {
+    padding: 16px;
+  }
+
+  .project-tags {
+    flex-wrap: wrap;
   }
 }

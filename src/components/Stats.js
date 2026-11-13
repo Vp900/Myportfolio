@@ -1,12 +1,12 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Stats.css';
-import { Briefcase, Smile, Calendar, Zap } from 'lucide-react';
+import { Briefcase, Award, Calendar, Layers } from 'lucide-react';
 
 const statsData = [
+  { icon: <Calendar />, value: 4, label: 'Years Experience', suffix: '+' },
   { icon: <Briefcase />, value: 50, label: 'Projects Completed', suffix: '+' },
-  { icon: <Smile />, value: 45, label: 'Happy Clients', suffix: '+' },
-  { icon: <Calendar />, value: 3, label: 'Years Experience', suffix: '+' },
-  { icon: <Zap />, value: 20, label: 'Tools Mastered', suffix: '+' },
+  { icon: <Award />, value: 8, label: 'Professional Certifications', suffix: '' },
+  { icon: <Layers />, value: 15, label: 'Web & App Categories', suffix: '+' },
 ];
 
 const StatItem = ({ icon, value, label, suffix }) => {

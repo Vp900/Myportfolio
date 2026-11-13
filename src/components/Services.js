@@ -5,13 +5,13 @@ import './Services.css';
 import { 
   FaWordpress, 
   FaShoppingCart, 
-  FaRedo, 
-  FaFileAlt, 
   FaTools, 
-  FaTachometerAlt 
+  FaTachometerAlt,
+  FaGraduationCap,
+  FaCogs
 } from 'react-icons/fa';
 
-// Import New 3D Premium Icons
+// Import 3D Icons
 import webIcon from '../assets/services/web.png';
 import aiIcon from '../assets/services/ai.png';
 import designIcon from '../assets/services/design.png';
@@ -21,20 +21,20 @@ gsap.registerPlugin(ScrollTrigger);
 const featuredServices = [
   {
     icon: webIcon,
-    title: 'Full-Stack Web Solutions',
-    description: 'Developing high-performance, scalable web applications with React.js, Node.js, and modern cloud architectures.',
+    title: 'Full-Stack Web Development',
+    description: 'Engineering responsive, scalable web applications using React.js, Node.js, Express.js, and Python with clean architecture and modern UX.',
     theme: 'cyan'
   },
   {
     icon: aiIcon,
-    title: 'AI & Workflow Automation',
-    description: 'Integrating OpenAI, custom chatbots, and automated bulk messaging systems to streamline business processes.',
+    title: 'Database & API Architecture',
+    description: 'Designing robust database solutions with MongoDB, PostgreSQL, and Supabase, integrated with secure RESTful APIs and authentication.',
     theme: 'violet'
   },
   {
     icon: designIcon,
-    title: 'UI/UX & Creative Design',
-    description: 'Crafting modern, brand-focused digital experiences that provide a seamless and engaging journey for users.',
+    title: 'CMS & E-Commerce Stores',
+    description: 'Customizing high-converting WordPress, WooCommerce, and Shopify platforms with responsive layouts, payment gateways, and custom plugins.',
     theme: 'teal'
   }
 ];
@@ -42,33 +42,33 @@ const featuredServices = [
 const specialistServices = [
   {
     icon: <FaWordpress />,
-    title: 'WordPress & CMS',
-    description: 'Custom themes and Elementor setups.'
+    title: 'WordPress & Shopify',
+    description: 'Custom theme & plugin customization with Elementor.'
   },
   {
     icon: <FaShoppingCart />,
-    title: 'E-Commerce',
-    description: 'Shopify & WooCommerce store setup.'
+    title: 'E-Commerce Solutions',
+    description: 'Shopping carts, checkout flows, and payment integration.'
   },
   {
-    icon: <FaRedo />,
-    title: 'Website Revamp',
-    description: 'Modernizing outdated web interfaces.'
+    icon: <FaGraduationCap />,
+    title: 'Quiz & Exam Systems',
+    description: 'Interactive timed quizzes with admin analytics dashboards.'
   },
   {
-    icon: <FaFileAlt />,
-    title: 'Landing Pages',
-    description: 'High-conversion marketing pages.'
+    icon: <FaCogs />,
+    title: 'ERP & Business Systems',
+    description: 'Inventory, production planning, and management portals.'
   },
   {
     icon: <FaTools />,
-    title: 'Speed Optimization',
-    description: 'Boosting performance & SEO score.'
+    title: 'SEO & Speed Optimization',
+    description: 'On-page SEO, speed boosting, and mobile responsiveness.'
   },
   {
     icon: <FaTachometerAlt />,
-    title: 'API Integration',
-    description: 'Secure server-side CRUD logic.'
+    title: 'RESTful API Integration',
+    description: 'Third-party API integration, JSON, and secure endpoints.'
   }
 ];
 
@@ -129,11 +129,11 @@ export default function Services() {
     <section className="services-section-v2" id="services" ref={sectionRef}>
       <div className="container">
         <div className="services-header-v2">
-          <span className="subtitle-v2">Professional Excellence</span>
-          <h2 className="main-title-v2">Specialized Digital Services</h2>
+          <span className="subtitle-v2">Professional Solutions</span>
+          <h2 className="main-title-v2">Services & Offerings</h2>
           <p className="description-v2">
-            Delivering end-to-end web development solutions — from high-performance applications 
-            to AI-driven automation and custom creative designs.
+            Delivering end-to-end web development solutions — from high-performance full-stack applications 
+            and database architecture to custom CMS and e-commerce platforms.
           </p>
         </div>
 
@@ -154,11 +154,9 @@ export default function Services() {
         <div className="specialist-grid">
           {specialistServices.map((service, index) => (
             <div className="specialist-card" key={index}>
-              <div className="specialist-icon">{service.icon}</div>
-              <div className="specialist-info">
-                <h4>{service.title}</h4>
-                <p>{service.description}</p>
-              </div>
+              <div className="spec-icon">{service.icon}</div>
+              <h4>{service.title}</h4>
+              <p>{service.description}</p>
             </div>
           ))}
         </div>

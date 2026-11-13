@@ -21,7 +21,7 @@ export default function Header() {
 
   // Section observer for active link
   useEffect(() => {
-    const sections = ['home', 'about', 'skill', 'services', 'projects', 'contact'];
+    const sections = ['home', 'about', 'experience', 'skill', 'services', 'projects', 'tools', 'contact'];
     const observerOptions = {
       root: null,
       rootMargin: '-20% 0px -70% 0px',
@@ -68,10 +68,12 @@ export default function Header() {
 
   const navLinks = [
     { label: 'Home', hash: '#home' },
-    { label: 'About Us', hash: '#about' },
+    { label: 'About', hash: '#about' },
+    { label: 'Experience & Edu', hash: '#experience' },
     { label: 'Skills', hash: '#skill' },
     { label: 'Services', hash: '#services' },
     { label: 'Projects', hash: '#projects' },
+    { label: 'Tools', hash: '#tools' },
     { label: 'Contact', hash: '#contact' },
   ];
 
